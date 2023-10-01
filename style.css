@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+    body {
+        background-image: url('../bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+
+h2{
+    color:#EEEEEE;
+    background-color:#176b87c5;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+h3{
+    color:#EEEEEE ;
+    background-color:#176b87c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.nav{
+    padding-top: 5px;
+    padding-bottom: 10px;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+      background-color:#64ccc5c5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+     
+}
+h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+    padding: 10px;
+}
+
+.nav a {
+    cursor: pointer;
+    box-sizing: border-box;
+    
+    text-decoration: none;
+    text-transform: capitalize;
+     font-weight: bold;
+}
+img{
+    width:100px;
+    height: 300px;
+    
+}
+a:hover {
+    font-size: 20px;
+    color: #fff;
+}
+p {
+    font-size: 16px;          /* Base font size for readability */
+    line-height: 1.5;        /* Good line height for readability */
+    color: #333;             /* Dark text color, adjust as needed */
+    background-color: rgba(255, 255, 255, 0.6); /* Slight white background to enhance readability against bg image */
+    padding: 10px;           /* Some padding to separate text from bg image */
+}
+
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns for desktop view */
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 100%; /* Make images responsive */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    border-radius: 10px;  /* Give a slight curve */
+}
+
+.photo-grid img:hover {
+    transform: scale(1.1);  /* Zoom in slightly on hover */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+
+    img{
+       
+        
+    }
+    .photo-grid {
+        grid-template-columns: 1fr;  /* One column for mobile view */
+    }
+
+    /* Make it feel like a slideshow by increasing the vertical gap */
+    .photo-grid img + img {
+        margin-top: 30px;
+    }
+}
+
+
+
+#searchBar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#searchButton {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#searchResults {
+    margin-top: 20px;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+    p {
+        font-size: 14px;     /* Slightly smaller font for mobile */
+    }
+}
+
+/* For desktop view */
+@media (min-width: 769px) {
+    p {
+        font-size: 18px;     /* Larger font for desktop */
+    }
+}
