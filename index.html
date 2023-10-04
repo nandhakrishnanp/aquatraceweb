@@ -1,83 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaTraceWeb</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/quagga@v0.12.1/dist/quagga.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
-    <header class="header"> 
-        <div id="name"><h2>AquaTraceweb</h2>
-            <h3>Mapping Every Drop's Journey</h3></div>
-            <div class="nav">
-                <!-- <a href="#" class="fa fa-tint"></a> -->
-                <a href="index.html"  > home</a>
-                <a href="about.html">about</a>
-                <a href="products.html">Latest news and products</a>
-                
-                <a href="contact.html">contact</a></div>
-        </header>
+    <header class="header">
+        <div id="name">
+            <h2>AquaTraceweb</h2>
+            <h3>Mapping Every Drop's Journey</h3>
+        </div>
+        <div class="nav">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">Latest news and products</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </header>
+
     <div id="content">
-        <h4> "The water footprint measures the total volume of freshwater used to produce a product or service"
+        <h4>"The water footprint measures the total volume of freshwater used to produce a product or service"</h4>
+        <div class="photo-grid">
+            <img src="../photo1.jpg" alt="Description of Photo 1" width="100px">
+            <img src="../photo2.png" alt="Description of Photo 2">
+            <img src="../photo3.jpg" alt="Description of Photo 3">
+        </div>
 
-            <div></h4>
-                <!-- photo-grid -->
-                <div class="photo-grid">
-                    <img src="photo1.jpg" alt="Description of Photo 1" width="100px">
-                    <img src="photo2.png" alt="Description of Photo 2">
-                    <img src="photo3.jpg" alt="Description of Photo 3">
-                </div>
-           
-    <input type="text" id="searchBar" placeholder="Enter product name...">
-    <button id="searchButton">Search</button>
-    <div id="searchResults"></div>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Enter product name or barcode...">
+            <button id="searchButton">Check Water Footprint</button>
+            <i class="material-icons" id="scanIcon">camera_alt</i>
+        </div>
+        <div id="searchResults"></div>
 
-</div>
+        <div id="interactive" class="viewport"></div>
+        <button id="scanButton">Start Scanning</button>
+        <div id="results"></div>
 
-<div id="interactive" class="viewport"></div>
-<button id="scanButton">Start Scanning</button>
-<div id="results"></div>
-
-
-
-
- <p>
-    
-    <!-- <div class="container">
-        <h2>Search Water Footprint by Barcode</h2>
-        <input type="text" id="barcodeInput" placeholder="Enter Barcode...">
-        <button onclick="fetchProductData()">Search</button>
-
-        <div id="productInfo"></div>
-    </div> -->
-    
-
-    
-    
-How to Search:<br><br>
-    
-    Input Product Name: <br><br>
-    
-               Simply type in the name of the product you're curious about. For example, enter "rice" or "jeans" to get their water footprint.
-    
-               <!-- <br><br>Use Barcode Numbers: <br><br>
-    
-               Alternatively, you can enter the barcode number of a product to get a precise footprint reading. Ensure it's a valid barcode associated with the product. -->
-    
-               <br><br> Press 'Search': 
-    <br><br>
-                Once you've entered your query, click on the 'Search' button or press 'Enter' on your keyboard.
-    
-                <br><br>Read Results: <br><br>The water footprint for your chosen product will appear below. If you can't find a product, it might not be in our current database, but we're always updating.
-    
-    
-
+        <p>
+            How to Search:<br><br>
+            Input Product Name: <br><br>
+            Simply type in the name of the product you're curious about. For example, enter "rice" or "jeans" to get their water footprint.<br><br>
+            Press 'Search': <br><br>
+            Once you've entered your query, click on the 'Search' button or press 'Enter' on your keyboard.<br><br>
+            Read Results: <br><br>The water footprint for your chosen product will appear below. If you can't find a product, it might not be in our current database, but we're always updating.
+        </p>
     </div>
 
-          <script src="script.js"></script>
- 
+    <script src="script.js"></script>
 </body>
+
 </html>
